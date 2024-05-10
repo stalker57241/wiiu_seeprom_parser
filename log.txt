@@ -1,0 +1,94 @@
+
+=======================================
+   Wii U SEEPROM parser v1   
+=======================================
+
+Based on http://wiiubrew.org/wiki/Hardware/OTP
+
+Reading otp...
+Successfully read otp.
+Reading seeprom...
+Successfully read seeprom.
+
+
+
+
+
+
+================SEEPROM VALUES================
+
+
+SEEPROM PRNG seed:...............0x00000000000058CC
+PPC PVR (should be 0x70010201):..0x70010201
+ASCII Tag 1:....................."CM8394"
+OTP tag:........................."239LP718"
+
+-----------------Board Config----------------
+CRC32:...........................0xBEC9F23A
+size:............................0x0024
+library version:.................0x0004
+author:..........................0x404D
+boardType:......................."CF"
+boardRevision:...................0x000B
+bootSource:......................"N1"
+ddr3Size:........................0x0800
+ddr3Speed:.......................0x0002
+ppcClockMultiplier:..............0x0005
+iopClockMultiplier:..............0x0002
+video1080p:......................0x0001
+ddr3Vendor:......................0x5521
+movPassiveReset:.................0x0000
+sysPllSpeed:.....................0x00F8
+sataDevice:......................0x0003
+consoleType:.....................0x0001
+devicePresence:..................0x00000000
+---------------------------------------------
+
+Wii U drive key:.................0x7819CC4D4F3EA413D78BCD3A80D3F5F4
+Wii U factory key:...............0x00000000000000000000000000000000
+Wii U devkit key (?):............0x00000000000000000000000000000000
+Wii U USB key seed:..............0x444AC1B7B8C5D165B27AEBF20464C92A
+Drive key's status flag:.........SET, encrypted with Wii U SEEPROM key (0xFFFF)
+USB key seed's status flag:......SET, not encrypted (0x0000)
+Devkit key's status flag:........NOT SET (0x0000)
+
+-----------------SLC:sys_prod----------------
+version:.........................0x00000002
+eeprom_version:..................0x00010000
+product_area:....................0x00000002
+game_region:.....................0x00000000
+ntsc_pal:........................"NTSC"
+country_code_5ghz:..............."Q2"
+country_code_revision_5ghz:......0x0007
+code_id:........................."FW"
+serial_id:......................."405593268"
+model_number:...................."WUP-101(02)"
+---------------------------------------------
+
+ASCII Tag 2:....................."ma_dp611"
+
+
+Decrypting boot prameters with key 0x3B8D192A39B759A8DF501FC5DA8EC3E2
+Boot parameres:
+    Control flags (clock config + SMC delay):
+        CPU speed in MHz:......................0x0010
+        IO delay before checking SD boot:......0x0000
+        Clock increased:.......................0x0000
+    Control flags (NAND config):
+        Overwrite NAND_BANK?:..................0x0000
+        Overwrite NAND_CONFIG?:................0x0000
+    Overwrite NAND_CONFIG with value:..........0x00000000
+    Overwrite NAND_BANK with value:............0x00000000
+    CRC32:.....................................0x973D546B
+Boot parameres for boot0 about boot1:
+    boot1 version:.............................0x20B9
+    boot1 NAND sector:.........................0x1000
+    CRC32:.....................................0x608CDC79
+Boot parameres for boot0 about boot1 copy:
+    boot1 copy version:........................0x20B9
+    boot1 copy NAND sector:....................0x1001
+    CRC32:.....................................0x77F7C83A
+
+
+=============================================
+
